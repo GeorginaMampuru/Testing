@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> Scrolling up and down using the scrolling by method
+    We already talked about scrolling a window in the chapter Window sizes and scrolling.
+
+win.scrollBy(x,y)
+
+Scroll the window x pixels right and y down relative the current scroll. Negative values are allowed.
+
+win.scrollTo(x,y)
+
+Scroll the window to the given coordinates (x,y).
+
+elem.scrollIntoView(top = true)
+
+Scroll the window to make elem show up at the top (the default) or at the bottom for elem.scrollIntoView(false).
+
+There’s also window.onscroll event.
+</p>
+
+
+<button onclick="scrollWin(0, 50)">Scroll down</button><br><br>
+<button onclick="scrollWin(0, -50)">Scroll up</button><br><br>
+
+<script>
+
+    
+
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}
+</script>
+
+</body>
+<style>
+body {
+  height: 7500px;
+}
+button {
+  position: fixed;
+}
+</style>
+</html>
